@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "DtoOfMyInterface": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "person": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "name"
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "person"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "$ref": "#/definitions/DtoOfMyInterface"
+}
